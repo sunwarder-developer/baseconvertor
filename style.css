@@ -1,0 +1,25 @@
+
+body{
+    background-color: #213145;
+    
+}
+
+.kw{
+    user-select: none;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    color: #213145 !important;
+    position: absolute;
+    left: 0;
+}
+a {
+    color: white !important; 
+}
+div.navindex.ul.li a{
+    color: white;
+}
+#footer{
+    display: flex;
+    justify-content: space-around;
+}

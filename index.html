@@ -5,10 +5,13 @@
 	<link rel="shortcut icon" href="https://sheknowhow.com/favicon/android-chrome-192x192.png">
 	<script data-ad-client="pub-9502043111004639" async src="https://pagead2.googlesyndication.com/
 pagead/js/adsbygoogle.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        
 		<meta name="og:image" content ="https://sheknowhow.com/favicon/android-chrome-512x512.png">
 		<meta name="og:title" content="Convert Octal, Decimal, Hexadecimal, Ternary, Quaternary, Septenary,... to Binary">
 		<meta name="og:description" content="Hệ thập phân, nhị phân,thập lục phân, hệ bát phân, tam phân, biến đổi cơ số,Sử dụng công cụ này dễ dàng để nhanh chóng chuyển đổi Nhị phân thành một đơn vị của Chữ số">
 		<meta name="keywords" content="biến đổi cơ số,binary, nhị phân, decimal, thập phân, thập lục phân, hexadecimal,bát phân,octal, cơ số, base ">
+        <link rel="stylesheet" href="style.css">
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-8GQSTF3S69"></script>
 <script>
@@ -20,36 +23,34 @@ pagead/js/adsbygoogle.js"></script>
 </script>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <style>
-		div#loading{
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        background-color: rgba(10,10,10,0.8);
-        top: 0;
-        text-align: center;
-    }
-    div#loading_icon{
-      
-        position: absolute;
-        left: calc( 50% - 100px );
-        top: calc(50% - 100px);
-
-        
-    }
+	div.loading-wrap{
+       position: fixed;
+       background-color: rgba(10,10,10,0.8);
+       width: 100%;
+       height: 100%;
+       text-align: center;
+       display: none;
+   }
     body{
 
         background-color: #213145;
         margin: 0px;
     }
-    div#wrapper{
-        display: none;
-    }
+   .navindex ul li{
+       margin-left: 20px;
+       
+   }
+   .navindex ul li *{
+       color: white;
+   }
     h1#headingTitle{
         text-align: center;
         color: white;
 
     }
-
+    li.base_name_infor{
+        box-sizing: unset;
+    }
     p.invalid{
         border-color: brown !important;
     }
@@ -174,22 +175,7 @@ pagead/js/adsbygoogle.js"></script>
 
 @media only screen  and (min-width : 1024px) {
     
-    div#loading{
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        background-color: rgba(10,10,10,0.8);
-        top: 0;
-        text-align: center;
-    }
-    div#loading_icon{
-      
-        position: absolute;
-        left: calc( 50% - 100px );
-        top: calc(50% - 100px);
-
-        
-    }
+   
 
     div#bases_info{
         border: 2px solid #213145;
@@ -318,6 +304,7 @@ pagead/js/adsbygoogle.js"></script>
     
 
     <body>
+        
     <noscript>
   
 
@@ -326,7 +313,11 @@ pagead/js/adsbygoogle.js"></script>
   </h1>
   
   </noscript>
-
+  <div class="loading-wrap">
+    <div class="spinner-border text-white" role="status">
+        <span class="sr-only"></span>
+      </div>
+  </div>
         <div id="wrapper">
         <div id="main">
             <div id="select_wrap">
@@ -491,27 +482,78 @@ pagead/js/adsbygoogle.js"></script>
                 </div>    
         </div> 
      
-            <div id="foot">
-                <address>
-                <span>
-                    Mọi đóng góp vui lòng liên hệ email (All comments to contact) : tienit0105@gmail.com
-
-                </span>
-                </address>         
-            </div>
+            
     </div>
         </div>
-        <div id="loading-wrapper">
-            
+        <div id="footer">
+            <div class="kw" style="color: #213145;">
+                  <h6>
+                    Base converter
+                  </h6>
+                  <h6>
+                    Math
+                    Convert from source base to decimal (base 10 ) by multiplying each digit with the base raised to the power of the digit number (starting from right digit number 0):
+    
+    decimal = ∑(digit×basedigit number)
+    Convert from decimal to destination base: divide the decimal with the base until the quotient is 0 and calculate the remainder each time. The destination base digits are the calculated remainders.
+    ASCII text to binary converter
+    ASCII text to hex converter
+    Base converter
+    Binary converter
+    Binary to ASCII text converter
+    Binary to decimal converter
+    Binary to hex converter
+    Date to roman numerals converter
+    Decimal to fraction converter
+    Decimal to percent converter
+    Decimal to binary converter
+    Decimal to octal converter
+    Decimal to hex converter
+    Degrees to deg,min,sec converter
+    Deg,min, sec to degrees converter
+    Degrees to radians converter
+    Fraction to decimal converter
+    Fraction to percent converter
+    Hex/decimal/octal/binary converter
+    Hex to ASCII text converter
+    Hex to binary conversion
+    Hex to decimal conversion
+    Octal to decimal conversion
+    Percent to decimal converter
+    Percent to fraction conversion
+    Percent to ppm conversion
+    ppm to percent conversion
+    ppm to ppb conversion
+    ppm to ppt conversion
+    ppb to ppm conversion
+    ppt to ppm conversion
+    ppm converter
+    Radians to degrees converter
+    Roman numerals converter
+    Scientific notation converter
+                  </h6>
+            </div>
+        <div class="navindex">
+        <ul>
+    
+        <li><a href="about.html">About</a></li>
+       
+        <li><a href="privacy.html">Privacy policy</a></li>
+        <li><a href="terms.html">Terms of use</a></li>
+        
+        </ul>
+        
+        </div>
         </div>
         <script
         src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
         crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <script>
-            $("#wrapper").show();
             </script>
-<script type="text/javascript" src="./convert.js?v=121">
+<script type="text/javascript" src="./convert.js">
 
 </script>
 
