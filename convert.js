@@ -10,7 +10,7 @@
         var allFilesToAjax = ["decimal_to_others.html","binary_to_others.html",
         'octal_to_others.html','hexadecimal_to_others.html','ternary_to_others.html','quaternary_to_others.html','quinary_to_others.html','senary_to_others.html','septenary_to_others.html','nonary_to_others.html','undecimal_to_others.html','duodecimal_to_others.html','vigesimal_to_others.html'
         ];
-
+        console.log(`https://baseconvertor.vivucard.com/${allFilesToAjax[ev.target.value]}`);
         allFilesToAjax.forEach((file,index)=>{
             
            
