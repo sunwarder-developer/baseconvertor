@@ -63,7 +63,7 @@ window.onload = function(){
     })
     })
     
-    $(document).on("mouseover k",function(){
+    $(document).on("mouseover keydown",function(){
         $input = $("input#userinput");
       
         $input.on("input keyup",function(ev){
