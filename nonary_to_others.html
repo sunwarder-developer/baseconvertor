@@ -1,0 +1,221 @@
+<html>
+
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+    body{
+        background-color: #213145;
+        margin: 0px;
+    }
+    
+    h1#headingTitle{
+        text-align: center;
+        color: white;
+
+    }
+
+    p.invalid{
+        border-color: brown !important;
+    }
+  
+    </style>
+    
+    <title>
+        Convert Base - Computer Science
+    </title>
+    <meta charset="utf-8">
+    <meta name="description" content="Covert Nonary to Binary, Decimal,Octal fastly!">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    </head>
+    
+
+    <body>
+        <div id="wrapper">
+        <div id="main">
+            <div id="select_wrap">
+               
+                <select name="select_base" id="select_base">
+                    <option  value="1">
+                        Thập phân (Decimal)
+                    </option>
+                    <option value="2" >
+                        Nhị phân (Binary)
+                    </option>
+                    <option value="3">
+                        Bát phân (Octal)
+                    </option>
+                    <option value="4">
+                        Thập lục phân (Hexadecimal)
+                    </option>
+                    <option value="5">
+                        Tam phân (Ternary)
+                    </option>
+                    <option value="6">
+                        Hệ bốn (Quaternary)
+                    </option>
+                    <option value="7">
+                        Hệ ngũ phân (Quinary)
+                    </option>
+                    <option value="8">
+                        Hệ 6 (Senary)
+                    </option>
+                    <option value="9">
+                        Hệ 7 (Septenary)
+                    </option>
+                    <option selected value="10">
+                        Hệ 9 (Nonary)
+                    </option>
+                    <option value="11">
+                        Hệ 11 (Undecimal)
+                    </option>
+                    <option value="12">
+                        Hệ thập nhị phân (12) (Duodecimal)
+                    </option>
+                    <option value="13">
+                        Hệ nhị thập phân (20) (Quaternary)
+                    </option>
+                </select>
+              
+            </div>
+            
+            
+        <div id="infor_wrapper">
+
+            <h1 id="headingTitle">
+                Hệ 9 (Nonary)
+            </h1>
+                <div class="block">
+              
+                    <p class="input_user" id="msg"> 
+                    <input type="text" id="userinput" placeholder="Type Nonary here (Nhập số hệ 9)">
+                    </p>
+    
+                </div>
+                <div id="bases_info">
+                    <ul>
+                    <li class="base_name_infor" id="decimal">
+                <span class="base_name">
+                    Hệ thập phân (Decimal)
+                </span>
+                <div>
+                       <p class="value"></p>
+                       </div>
+             </li>
+             <li class="base_name_infor" id="binary">
+                       <span class="base_name">
+                           Hệ nhị phân (Binary)
+                       </span>
+                       <div>
+                       <p class="value"></p>
+                       </div>
+                    </li>
+                    <li class="base_name_infor" id="octal">
+                       <span class="base_name">
+                           Hệ bát phân (Octal)
+                       </span>
+                       <div>
+                       <p class="value"></p>
+                       </div>
+                    </li>
+                    <li class="base_name_infor" id="hexadecimal">
+                       <span class="base_name">
+                           Hệ thập lục phân (Hexadecimal)
+                       </span>
+                       <div>
+                       <p class="value"></p>
+                       </div>
+                    </li>
+                    <li class="base_name_infor" id="ternary">
+                       <span class="base_name">
+                           Hệ tam phân (Ternary)
+                       </span>
+                       <div>
+                       <p class="value"></p>
+                       </div>
+                    </li>
+                    <li class="base_name_infor" id="quaternary">
+                       <span class="base_name">
+                           Hệ bốn (Quaternary)
+                       </span>
+                       <div>
+                       <p class="value"></p>
+                       </div>
+                    </li>
+                    <li class="base_name_infor" id="quinary">
+                       <span class="base_name">
+                           Hệ ngũ phân (Quinary)
+                       </span>
+                       <div>
+                       <p class="value"></p>
+                       </div>
+                    </li>
+                    <li class="base_name_infor" id="senary">
+                       <span class="base_name">
+                           Hệ 6 (Senary)
+                       </span>
+                       <div>
+                       <p class="value"></p>
+                       </div>
+                    </li>
+                    <li class="base_name_infor" id="septenary">
+                       <span class="base_name">
+                           Hệ 7 (Septenary)
+                       </span>
+                       <div>
+                       <p class="value"></p>
+                       </div>
+                    </li>
+                    
+                    <li class="base_name_infor" id="undecimal">
+                       <span class="base_name">
+                           Hệ 11 (Undecimal)
+                       </span>
+                       <div>
+                       <p class="value"></p>
+                       </div>
+                    </li>
+                    <li class="base_name_infor" id="duodecimal">
+                       <span class="base_name">
+                           Hệ thập nhị phân (12) (Duodecimal)
+                       </span>
+                       <div>
+                       <p class="value"></p>
+                       </div>
+                    </li>
+                    <li class="base_name_infor" id="vigesimal">
+                       <span class="base_name">
+                           Hệ nhị thập phân (20) (Vigesimal)
+                       </span>
+                       <div>
+                       <p class="value"></p>
+                       </div>
+                    </li>
+                    </ul>
+                </div>    
+        </div> 
+       
+            <div id="foot">
+                <address>
+                <span>
+                    All comments to contact : tienit0105@gmail.com
+
+                </span>
+                </address>         
+            </div>
+    </div>
+        
+        </div>
+        
+
+    <script
+        src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+        <script>
+            $("#wrapper").show();
+            </script>
+<script type="text/javascript" src="./convert.js?v=100">
+
+</script>
+</body>
+</html>
